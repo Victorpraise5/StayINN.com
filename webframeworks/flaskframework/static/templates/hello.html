@@ -1,0 +1,19 @@
+<!--<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Hello
+    </title>
+  </head>
+  <body>
+    <h1>Hello, {{ person if person else "stranger" }}</h1>
+  </body>
+</html> -->
+
+<!doctype html>
+<title>Hello from Flask</title>
+{% if person %}
+  <h1>Hello {{ person }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
